@@ -242,7 +242,7 @@ public class Server extends JFrame {
                 if(scorePlayer1>scorePlayer2){
                     JOptionPane.showMessageDialog(null, "플레이어1이 이겼습니다.", "결과!", JOptionPane.INFORMATION_MESSAGE);
                     System.exit(0);
-                } else if(scorePlayer1>scorePlayer2){
+                } else if(scorePlayer1<scorePlayer2){
                     JOptionPane.showMessageDialog(null, "플레이어2가 이겼습니다.", "결과!", JOptionPane.INFORMATION_MESSAGE);
                     System.exit(0);
                 }else{
