@@ -1,4 +1,4 @@
-import java.awt.*;
+﻿import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -84,6 +84,7 @@ public class MainView extends JFrame {
                 while (true) {
                     try {
                         //[0]닉네임, [1]받은 메세지, [2]user turn, [3]turncount, [4]winner
+	        //예전에는 이렇게 했다면 이번에는 java json으로 주고 받아서 메시지 객체를 만드는 것이 어떨까?
                         String msg = dis.readUTF(); // 메세지를 수신한다
                         String splitMsg[]=msg.split(":");
                         if(splitMsg.length>2){
